@@ -2,7 +2,7 @@ name: Build and publish latest
 on:
   push:
     branches:
-      - master
+      - medwing/master
 
 jobs:
   build:

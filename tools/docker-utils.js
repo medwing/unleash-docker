@@ -32,7 +32,7 @@ function renderDockerfile({ nodeDockerVersion }) {
   );
 }
 
-const unleashImageName = `unleashorg/unleash-server`;
+const unleashImageName = `medwing/unleash-server`;
 
 /**
  * Renders a Dockerfile to a temporary location on disk
@@ -49,7 +49,7 @@ async function createDockerfile({ unleashServerVersion, nodeDockerVersion , late
   } else {
     unleashDockerTagVersion = `latest-node${nodeDockerVersion}`
   }
-  const unleashDockerTag = `unleashorg/unleash-server:${unleashDockerTagVersion}`;
+  const unleashDockerTag = `medwing/unleash-server:${unleashDockerTagVersion}`;
 
   const dockerfilePath = path.join(
     tempDirPath,
